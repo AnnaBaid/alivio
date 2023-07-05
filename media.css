@@ -1,0 +1,126 @@
+@media screen and (max-width: 1400px) {
+  .story__container {
+    padding: 100px 0;
+  }
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .welcome__img {
+    left: inherit;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .welcome__container {
+    flex-direction: column-reverse;
+  }
+
+  .welcome__title,
+  .welcome__desc,
+  .how-info__slogan,
+  .how-info__desc,
+  .story__title,
+  .product__slogan,
+  .product__desc {
+    max-width: 100%;
+  }
+
+  .welcome__img,
+  .welcome__img img {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .how-info {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .how-step {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .how-step__img img {
+    width: 100%;
+  }
+  .how {
+    margin-bottom: 60px;
+  }
+  .story__container {
+    flex-direction: column;
+  }
+  .story__info {
+    padding-bottom: 20px;
+  }
+  .story__img img {
+    width: 100%;
+  }
+  .product__container {
+    flex-direction: column-reverse;
+    margin-bottom: 100px;
+  }
+  .product__img img {
+    width: 100%;
+  }
+  .footer__container {
+    flex-direction: column;
+    gap: 70px;
+  }
+
+  .header__btn {
+    display: none;
+  }
+
+  .header__container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .header {
+    height: 90px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
+  }
+  main {
+    padding-top: 90px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #burger {
+    display: inline-block;
+  }
+  .header__ul {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    background: var(--color-primary);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-120%);
+    transition: 1s all ease-in-out;
+  }
+  .header__ul._active {
+    transform: translateX(0);
+  }
+  .header__a {
+    font-size: 26px;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .how-step {
+    grid-template-columns: 1fr;
+  }
+  .footer__ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
